@@ -45,7 +45,7 @@ endfunction()
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT AND
         NOT QT_BUILD_INTERNALS_NO_FORCE_SET_INSTALL_PREFIX
         AND NOT QT_SUPERBUILD)
-    set(qtbi_orig_prefix "D:/MPN/src/qsc/dist/dolphin.x64_6.7.0")
+    set(qtbi_orig_prefix "D:/Jenkins10/workspace/Qt/q6_7wx6v2/buildDir/Qt6.7.0-Windows-x86_64-VS2022-17.9.6")
     set(qtbi_orig_staging_prefix "")
     qt_internal_new_prefix(qtbi_new_prefix
         "${QT_BUILD_INTERNALS_RELOCATABLE_INSTALL_PREFIX}"
@@ -77,12 +77,12 @@ endif()
 set(QT_WILL_INSTALL ON CACHE BOOL
     "Boolean indicating if doing a Qt prefix build (vs non-prefix build)." FORCE)
 
-set(QT_SOURCE_TREE "D:/MPN/src/qsc/qt-everywhere-src-6.7.0/qtbase" CACHE PATH
+set(QT_SOURCE_TREE "D:/Qt/qt-src-6.7.0/qtbase" CACHE PATH
 "A path to the source tree of the previously configured QtBase project." FORCE)
 
 # Propagate decision of building tests and examples to other repositories.
-set(QT_BUILD_TESTS FALSE CACHE BOOL "Build the testing tree.")
-set(QT_BUILD_EXAMPLES FALSE CACHE BOOL "Build Qt examples")
+set(QT_BUILD_TESTS OFF CACHE BOOL "Build the testing tree.")
+set(QT_BUILD_EXAMPLES OFF CACHE BOOL "Build Qt examples")
 set(QT_BUILD_BENCHMARKS OFF CACHE BOOL "Build Qt Benchmarks")
 set(QT_BUILD_MANUAL_TESTS OFF CACHE BOOL "Build Qt manual tests")
 set(QT_BUILD_MINIMAL_STATIC_TESTS OFF CACHE BOOL
@@ -141,26 +141,16 @@ set(TEST_subarch_result "" CACHE INTERNAL "")
 set(TEST_buildAbi "x86_64-little_endian-lp64" CACHE INTERNAL "")
 set(TEST_ld_version_script "OFF" CACHE INTERNAL "")
 
-get_property(__qt_is_multi_config GLOBAL PROPERTY GENERATOR_IS_MULTI_CONFIG)
-if(__qt_is_multi_config)
-    set(CMAKE_CONFIGURATION_TYPES "RelWithDebInfo;Debug" CACHE STRING "" FORCE)
-    set(CMAKE_TRY_COMPILE_CONFIGURATION "RelWithDebInfo")
-endif()
-unset(__qt_is_multi_config)
-
-set(QT_MULTI_CONFIG_FIRST_CONFIG "RelWithDebInfo")
-if(CMAKE_GENERATOR STREQUAL "Ninja Multi-Config")
-    set(CMAKE_CROSS_CONFIGS "all" CACHE STRING "")
-    set(CMAKE_DEFAULT_BUILD_TYPE "RelWithDebInfo" CACHE STRING "")
-    set(CMAKE_DEFAULT_CONFIGS "all" CACHE STRING "")
-endif()
-set(BUILD_WITH_PCH "OFF" CACHE STRING "")
+# Used by qt_internal_set_cmake_build_type.
+set(__qt_internal_initial_qt_cmake_build_type "Release")
+set(BUILD_WITH_PCH "ON" CACHE STRING "")
 set(QT_QPA_DEFAULT_PLATFORM "windows" CACHE STRING "")
 set(CMAKE_INSTALL_RPATH "" CACHE STRING "")
 
 if(NOT QT_SKIP_BUILD_INTERNALS_PKG_CONFIG_FEATURE)
     set(FEATURE_pkg_config "OFF" CACHE BOOL "Using pkg-config" FORCE)
 endif()
+set(OPENSSL_ROOT_DIR "D:/Jenkins10/workspace/Qt/q6_7wx6v2/buildDir/OpenSSL3.0.13-Windows-x86_64-VS2022-17.9.6" CACHE STRING "")
 
 set(INSTALL_BINDIR "bin" CACHE STRING "Executables [PREFIX/bin]" FORCE)
 set(INSTALL_INCLUDEDIR "include" CACHE STRING "Header files [PREFIX/include]" FORCE)

@@ -64,7 +64,7 @@ set_target_properties(Qt6::DeviceDiscoverySupportPrivate PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/QtDeviceDiscoverySupport;${_IMPORT_PREFIX}/include;\$<\$<BOOL:\$<TARGET_PROPERTY:Qt6::DeviceDiscoverySupportPrivate,_qt_module_has_private_headers>>:>;\$<\$<BOOL:\$<TARGET_PROPERTY:Qt6::DeviceDiscoverySupportPrivate,_qt_module_has_private_headers>>:>;\$<\$<BOOL:\$<TARGET_PROPERTY:Qt6::DeviceDiscoverySupportPrivate,_qt_module_has_private_headers>>:${_IMPORT_PREFIX}/include/QtDeviceDiscoverySupport/6.7.0>;\$<\$<BOOL:\$<TARGET_PROPERTY:Qt6::DeviceDiscoverySupportPrivate,_qt_module_has_private_headers>>:${_IMPORT_PREFIX}/include/QtDeviceDiscoverySupport/6.7.0/QtDeviceDiscoverySupport>"
   INTERFACE_LINK_LIBRARIES "Qt6::CorePrivate;\$<LINK_ONLY:Qt6::PlatformModuleInternal>"
   INTERFACE_QT_MAJOR_VERSION "6"
-  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6devicediscoverysupportprivate_metatypes.json>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6devicediscoverysupportprivate_release_metatypes.json>"
   _qt_config_module_name "devicediscovery_support_private"
   _qt_is_internal_module "TRUE"
   _qt_module_has_headers "ON"

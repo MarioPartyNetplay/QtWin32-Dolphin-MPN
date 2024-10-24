@@ -64,7 +64,7 @@ set_target_properties(Qt6::SvgWidgets PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/QtSvgWidgets;${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "Qt6::Core;Qt6::Gui;Qt6::Svg;Qt6::Widgets"
   INTERFACE_QT_MAJOR_VERSION "6"
-  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6svgwidgets_metatypes.json>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6svgwidgets_release_metatypes.json>"
   _qt_config_module_name "svgwidgets"
   _qt_is_public_module "TRUE"
   _qt_module_has_headers "ON"

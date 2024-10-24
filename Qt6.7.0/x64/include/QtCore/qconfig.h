@@ -6,7 +6,7 @@
 
 #define QT_FEATURE_pkg_config -1
 
-#define QT_FEATURE_debug_and_release 1
+#define QT_FEATURE_debug_and_release -1
 
 #define QT_FEATURE_separate_debug_info -1
 
@@ -20,11 +20,11 @@
 
 #define QT_FEATURE_framework -1
 
-#define QT_FEATURE_cxx20 1
+#define QT_FEATURE_cxx20 -1
 
-#define QT_FEATURE_cxx2a 1
+#define QT_FEATURE_cxx2a -1
 
-#define QT_FEATURE_cxx2b 1
+#define QT_FEATURE_cxx2b -1
 
 #define QT_FEATURE_reduce_relocations -1
 
@@ -40,15 +40,15 @@
 
 #define QT_FEATURE_future 1
 
-#define QT_FEATURE_concurrent -1
+#define QT_FEATURE_concurrent 1
 
-#define QT_FEATURE_dbus -1
+#define QT_FEATURE_dbus 1
 
-#define QT_FEATURE_openssl_linked -1
+#define QT_FEATURE_openssl_linked 1
 
 #define QT_FEATURE_opensslv11 -1
 
-#define QT_FEATURE_opensslv30 -1
+#define QT_FEATURE_opensslv30 1
 
 
 #define QT_VERSION_STR "6.7.0"
@@ -84,6 +84,4 @@
 #define QT_COMPILER_SUPPORTS_RDRND 1
 #define QT_COMPILER_SUPPORTS_RDSEED 1
 #define QT_COMPILER_SUPPORTS_SHA 1
-#define QT_NO_CONCURRENT 1
-#define QT_NO_DBUS 1
-#define QT_NO_OPENSSL
+#define QT_LINKED_OPENSSL

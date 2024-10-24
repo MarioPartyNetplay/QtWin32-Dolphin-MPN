@@ -64,7 +64,7 @@ set_target_properties(Qt6::Widgets PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/QtWidgets;${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "Qt6::Core;Qt6::Gui"
   INTERFACE_QT_MAJOR_VERSION "6"
-  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6widgets_metatypes.json>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6widgets_release_metatypes.json>"
   MODULE_PLUGIN_TYPES "styles"
   QT_DISABLED_PRIVATE_FEATURES "gtk3;style_mac;style_android"
   QT_DISABLED_PUBLIC_FEATURES ""

@@ -64,7 +64,7 @@ set_target_properties(Qt6::FbSupportPrivate PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/QtFbSupport;${_IMPORT_PREFIX}/include;\$<\$<BOOL:\$<TARGET_PROPERTY:Qt6::FbSupportPrivate,_qt_module_has_private_headers>>:>;\$<\$<BOOL:\$<TARGET_PROPERTY:Qt6::FbSupportPrivate,_qt_module_has_private_headers>>:>;\$<\$<BOOL:\$<TARGET_PROPERTY:Qt6::FbSupportPrivate,_qt_module_has_private_headers>>:${_IMPORT_PREFIX}/include/QtFbSupport/6.7.0>;\$<\$<BOOL:\$<TARGET_PROPERTY:Qt6::FbSupportPrivate,_qt_module_has_private_headers>>:${_IMPORT_PREFIX}/include/QtFbSupport/6.7.0/QtFbSupport>"
   INTERFACE_LINK_LIBRARIES "Qt6::CorePrivate;Qt6::GuiPrivate;\$<LINK_ONLY:Qt6::PlatformModuleInternal>"
   INTERFACE_QT_MAJOR_VERSION "6"
-  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6fbsupportprivate_metatypes.json>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6fbsupportprivate_release_metatypes.json>"
   _qt_config_module_name "fb_support_private"
   _qt_is_internal_module "TRUE"
   _qt_module_has_headers "ON"

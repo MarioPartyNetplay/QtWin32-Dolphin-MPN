@@ -64,7 +64,7 @@ set_target_properties(Qt6::Svg PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/QtSvg;${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "Qt6::Core;Qt6::Gui"
   INTERFACE_QT_MAJOR_VERSION "6"
-  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6svg_metatypes.json>"
+  INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6svg_release_metatypes.json>"
   _qt_config_module_name "svg"
   _qt_is_public_module "TRUE"
   _qt_module_has_headers "ON"
